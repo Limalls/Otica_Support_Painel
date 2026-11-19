@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-fundo: #f2f4f3;
+  --color-tinta: #17211e;
+  --color-acetato: #0e5a4a;
+  --color-acetato-escuro: #0a3f34;
+  --color-ambar: #c9871f;
+  --color-linha: #dce2df;
+  --font-sans: 'Instrument Sans', system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Instrument Sans', sans-serif;
+}
+
+body {
+  background: var(--color-fundo);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
